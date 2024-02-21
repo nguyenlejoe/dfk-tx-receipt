@@ -18,6 +18,13 @@ import { Footer } from "@/components/footer"
 import { KeyDialog } from "@/components/key-dialog"
 import { useEffect, useState } from "react"
 import { Icons } from "@/components/icons"
+import { Roboto } from 'next/font/google'
+ 
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -32,11 +39,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
   },[])
   return (
     <>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" className={roboto.className} suppressHydrationWarning>
         <head />
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased",
+            "min-h-screen bg-background font-sans antialiased grk",
             fontSans.variable
           )}
         >

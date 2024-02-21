@@ -80,3 +80,23 @@
   }
 }
 
+
+.grk .border{
+  border: none!important;
+}
+
+.grk .border-b{
+  border: none!important;
+}
+
+.grk .border-t{
+  border-top:1px solid burlywood;
+}
+
+.bg-accent{
+  background-color: rgba(124, 75, 12, 0.682);
+}
+/* 
+body{
+  background-color: rgb(92, 72, 47)!important;
+} */
