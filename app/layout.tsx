@@ -43,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased grk",
+            "min-h-screen bg-background font-sans antialiased",
             fontSans.variable
           )}
         >
@@ -53,7 +53,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <SiteHeader />
                     {ready ?
                       <TXProvider>
-                        <div className="flex-1">{children}</div>
+                        <div className="flex-1 grk">{children}</div>
                       </TXProvider>
                     :
                     <div className="min-h-screen flex items-center justify-center">    
